@@ -2,11 +2,14 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
 .page-wrapper {
     background-color: #D9D9D9;
 }
+
 .container.login {
-    position: absolute;
+    position: relative;
+    justify-content: center;
     background-color: #FFFFFF;
     border-radius: 20px;
     padding: 45px 25px;
@@ -16,6 +19,8 @@ body {
 }
 
 .container.login h1 {
+    display: flex;
+    justify-content: center;
     font-size: 22px;
     text-align: center;
 }
@@ -28,7 +33,7 @@ input {
     font-size: 15px;
 }
 
-input:placeholder {
+input::placeholder {
     color: #ABAFB3;
 }
 
@@ -74,43 +79,45 @@ button.btn.btn-login {
     min-width: 250px;
 }
 .cancelbtn {
-    position: relative;
-    top: -50px;
-    right: -255px;
-    filter: drop-shadow(0 0 0.75rem #fff);
+    position: absolute;
+    top: -20px;
+    right: -20px;
     border-radius: 50px;
     background-color: #fff;
     height: 50px;
     width: 50px;
-    border: none;
+    border-color: #DDDFE1;
+    border-style: double;
 }
 .item-1 {
     position: absolute;
-    top: 160px;
+    top: 170px;
     left: 20px;
 }
 .item-2 {
     position: absolute;
-    bottom: 310px;
+    bottom: 385px;
     right: 20px;
 }
 .item-3 {
     position: absolute;
-    bottom: 300px;
-    left: 55px;
+    bottom: 350px;
+    left: 85px;
 }
 .item-4 {
     position: absolute;
     top: 5px;
-    right: 20px;
+    right: 70px;
 
 }
 .item-5 {
     position: absolute;
     bottom: 0;
+    width: 100%;
 
 }
 .item-6 {
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
